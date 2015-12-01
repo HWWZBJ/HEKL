@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_root"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/color_blue"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/title_back"
+        style="@style/title_left_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_back" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp">
+
+        <TextView
+            android:id="@+id/title_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/title_right"
+            style="@style/title_btn_style"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="sdf"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/title_right2"
+            style="@style/title_btn_style"
+            android:background="@null"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="sdfsf"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:visibility="invisible"></Button>
+    </LinearLayout>
+</RelativeLayout>

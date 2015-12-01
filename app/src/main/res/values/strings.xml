@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HEKL</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">请输入地区(市级)/医院名称</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--系统配置-->
+<resources>
+    <color name="title_backgroud">#19a5d5</color>
+    <color name="text_color_black">#2e2c2c</color>
+    <color name="color_blue">#48CDD6</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_green">#22ff07</color>
+</resources>
