@@ -17,7 +17,6 @@ public class Happlication extends Application {
         super.onCreate();
         mApplication = this;
         KLog.init(true);
-
     }
 
     public static Application getApplication() {

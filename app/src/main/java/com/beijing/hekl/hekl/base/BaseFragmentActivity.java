@@ -1,6 +1,7 @@
 package com.beijing.hekl.hekl.base;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Build;
@@ -75,7 +76,7 @@ public class BaseFragmentActivity extends Activity {
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-//		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
 //			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
@@ -84,7 +85,7 @@ public class BaseFragmentActivity extends Activity {
 //					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 //					| View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.color_green));
+            window.setStatusBarColor(getResources().getColor(R.color.color_blue_deep));
 //			window.setNavigationBarColor(getResources().getColor(R.color.man_color));
         }
         KLog.d("CLASS_NAME", getClass().toString());
@@ -96,4 +97,12 @@ public class BaseFragmentActivity extends Activity {
         super.onDestroy();
 //		AppManager.getInstance().finishActivity(this);
     }
+//    @Override
+//    public Resources getResources() {
+//        Resources res = super.getResources();
+//        Configuration config=new Configuration();
+//        config.setToDefaults();
+//        res.updateConfiguration(config, res.getDisplayMetrics());
+//        return res;
+//    }
 }

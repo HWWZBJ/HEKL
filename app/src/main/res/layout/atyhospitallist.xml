@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/hospital_type" />
+
+        <Spinner
+            android:id="@+id/spi_hospital"
+            android:layout_width="wrap_content"
+            android:spinnerMode="dropdown"
+            android:scrollbars="none"
+            android:dropDownHorizontalOffset="100dp"
+            android:dropDownVerticalOffset="40dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+    <View style="@style/common_split_line" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hospital_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:horizontalSpacing="2dp"
+        android:scrollbarStyle="outsideInset"
+        ptr:ptrMode="both">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

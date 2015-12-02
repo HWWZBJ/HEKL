@@ -7,6 +7,13 @@
 
     <include layout="@layout/title_layout" />
 
+    <ViewStub
+        android:id="@+id/vs_netWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/vs_button"
+        android:layout="@layout/item_layout" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

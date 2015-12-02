@@ -47,7 +47,9 @@ public class AppUtils {
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivity != null) {
             NetworkInfo info = connectivity.getActiveNetworkInfo();
+//            String str = info.getTypeName();
             if (info != null && info.isConnected()) {
+//                ToastUtil.showShort(context, str);
                 // 当前网络是连接的
                 if (info.getState() == NetworkInfo.State.CONNECTED) {
                     // 当前所连接的网络可用
