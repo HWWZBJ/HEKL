@@ -45,4 +45,12 @@
             android:text="搜索"
             android:textColor="@color/color_white" />
     </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/el_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_expandablelistview">
+
+    </ExpandableListView>
 </LinearLayout>
